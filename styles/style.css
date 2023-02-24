@@ -44,10 +44,18 @@ header h1 #logoux{
 
 }
 
+header nav {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 header nav a {
     color: white;
     text-decoration: white;
     border: 2px solid white;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* h2 {
@@ -60,6 +68,24 @@ header nav a {
     margin: 20px 10px 20px 10px;
 } */
 
-h2 {
-    
+
+main .coluna-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .coluna1 {
+    width: 75%;
+    background-color: blue;
+}
+
+/* imagem lapis */
+main .coluna1 #lapis {
+    width: 100%;
+
+}
+
+main .coluna2 {
+    width: 20%;
+    background-color: lime;
 }
