@@ -7,23 +7,24 @@
 }
 
 body {
-
     font-family: 'Quicksand', sans-serif;
     color: grey;
+    background-color: #EDECED;
 }
 
 /* configurações genérica */
 
-.container-grid {
+.grid-layout {
     width: 80%;
+    max-width: 1200px;
+    min-width: 992px;
     margin: 0 auto;
-    background-color: purple;
+
 }
 
 /* cabeçalho */
 header {
-    background-color: grey;
-    text-decoration: none;
+    background-color: #676767;
 }
 
 header .header-flex {
@@ -34,7 +35,6 @@ header .header-flex {
 header h1 {
     color: white;
     font-weight: 300;
-    border: 2px solid white;
 
 }
 
@@ -44,30 +44,44 @@ header h1 #logoux{
 
 }
 
-header nav {
+h2 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header nav { 
+    color: white;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 header nav a {
     color: white;
     text-decoration: white;
-    border: 2px solid white;
-    justify-content: space-between;
-    align-items: center;
 }
 
-/* h2 {
-    width: 300;
-    height: 100;
-    border: 1px solid blue;
-
-    margin-top:auto;
-    margin: 20px;
-    margin: 20px 10px 20px 10px;
-} */
-
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.coluna-flex {
+     display: flex;
+     justify-content: space-between;
+ }
 
 main .coluna-flex {
     display: flex;
@@ -76,16 +90,58 @@ main .coluna-flex {
 
 main .coluna1 {
     width: 75%;
-    background-color: blue;
+    background-color: white;
+}
+
+main .coluna2 {
+    width: 20%;
 }
 
 /* imagem lapis */
 main .coluna1 #lapis {
     width: 100%;
+}
+
+main .coluna1 h2 {
+  
+    margin: 0 20px;
 
 }
 
-main .coluna2 {
-    width: 20%;
-    background-color: lime;
+main .coluna1 p {
+
+    margin: 0 20px 20px 20px;
+     
+    line-height: 24px;
 }
+
+main .coluna2 article {
+    background-color: white;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+/* footer */
+
+footer {
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+
+    padding: 0; /* top right bottom left*/
+    padding: 0 20px; /* top/bottom rigth/left */
+    padding: 0 20px 40; /* top rigth/left bottom */
+    padding: 10px 10px 10px 10px; /* top rigth bottom left*/
+
+    padding: 20px 0;
+
+    color: white;
+    background-color: #676767;
+}
+
